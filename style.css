@@ -38,7 +38,8 @@ h3 {
 }
 
 h4 {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
   font-size: 1rem;
 }
 
@@ -73,6 +74,20 @@ a:active {
   text-decoration: underline;
   margin: 0;
   padding: 0;
+}
+
+.avatar {
+  position: absolute;
+  top: 0;
+  right: 16px; /* Was 48px, 16px to align with dates */
+  border-radius: 50%;
+  width: 126px;
+  height: 126px;
+}
+
+.degree{
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
 }
 
 .l-divider {
