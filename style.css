@@ -86,6 +86,7 @@ a:active {
 .labeled-icon {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .skill {
