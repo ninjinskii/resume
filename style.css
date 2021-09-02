@@ -2,14 +2,14 @@
 
 body {
   font-family: "Roboto", sans-serif;
-  color: rgba(0, 0, 0, 0.6);
+  color: rgba(0, 0, 0, 0.87);
   background-color: #121212;
 }
 
 #resume {
   margin: 30px auto;
   padding: 20px;
-  width: 21cm;
+  width: 23cm; /* 21 */
   height: 29.7cm;
   background-color: #fefefe;
 }
@@ -25,7 +25,7 @@ h2 {
   font-family: "Josefin Sans", sans-serif;
   text-transform: uppercase;
   letter-spacing: 6px;
-  margin-bottom: 12px;
+  margin-bottom: 18px;
   font-size: 1.1rem;
 }
 
@@ -47,13 +47,17 @@ p {
 
 hr {
   border-top: solid 1px rgba(0, 0, 0, 0.12);
+  margin-top: 32px;
+  margin-bottom: 32px;
 }
 
 svg {
   border-radius: 50%;
+  /* fill: black; */
   fill: white;
   padding: 4px;
   background-color: #121212;
+  /* border: solid 1px rgba(0, 0, 0, 1); */
   opacity: 0.87;
   height: 32px;
   width: 32px;
@@ -92,6 +96,18 @@ a:active {
   color: rgba(0, 0, 0, 0.6);
 }
 
+.left-side section {
+  padding-right: 24px;
+}
+
+.right-side section {
+  padding-left: 24px;
+}
+
+.right-side hr {
+  margin-left: 24px;
+}
+
 h1,
 h2,
 h4,
@@ -111,5 +127,6 @@ h3,
 .text-caption {
   font-weight: 500;
   font-size: 0.85rem;
-  letter-spacing: 0.166666em;
+  letter-spacing: 0.0566666em;
+  color: rgba(0, 0, 0, 0.6);
 }
