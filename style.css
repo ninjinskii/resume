@@ -40,7 +40,7 @@ h3 {
 h4 {
   font-family: "Josefin Sans", sans-serif;
   text-transform: uppercase;
-  font-size: 0.8rem;
+  font-size: 0.85rem; /* 0.8rem */
 }
 
 p {
@@ -63,6 +63,10 @@ svg {
   opacity: 0.87;
   height: 32px;
   width: 32px;
+}
+
+ul {
+  padding-left: 0;
 }
 
 a,
@@ -140,4 +144,8 @@ h3,
   font-size: 0.85rem;
   letter-spacing: 0.0566666em;
   color: rgba(0, 0, 0, 0.6);
+}
+
+.text-date {
+  text-transform: capitalize;
 }
