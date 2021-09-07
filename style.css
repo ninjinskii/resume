@@ -166,6 +166,8 @@ h3,
 
 .text-date {
   text-transform: capitalize;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.85rem;
 }
 
 @media print {
