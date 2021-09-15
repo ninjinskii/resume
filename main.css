@@ -103,12 +103,21 @@ a:active {
   align-items: center;
 }
 
-.button {
+.button-light {
   border-radius: 4px;
-  border: solid 1px #121212;
-  color: rgba(0, 0, 0, 0.87);
+  border: solid 1px #f0f0f0;
+  color: rgba(255, 255, 255, 0.87);
   padding: 3px 8px;
+  margin-right: 24px;
   cursor: pointer;
+}
+
+.button-light > a,
+a:hover,
+a:visited,
+a:link,
+a:active {
+  text-decoration: none;
 }
 
 .small-svg {
