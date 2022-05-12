@@ -1,6 +1,6 @@
 translations = {
     "title": "Resume - Bailly Louis",
-    "position": "Developer",
+    "position": "Software Developer",
     "intro": "Passionate full stack developer who likes keeping up with new technologies.",
     "portfolio": "Portfolio",
     "skills": "Skills",
@@ -38,7 +38,7 @@ translations = {
     "quarks-7": "Conceived work queues using RabbitMQ to handle multiple file processing (~ 10 000)",
     "quarks-8": "Optimized the extraction algorithm according to the results obtained",
     "quarks-9": "Saved results in a MongoDB database",
-    "dev-intership": "Developer intership",
+    "dev-internship": "Developer intership",
     "march-june": "(March - June)",
     "ge": "General Electric (Belfort, 90)",
     "ge-1": "Development of display and facilitation software access to the assembly data of a gas turbine in Python.",

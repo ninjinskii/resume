@@ -38,7 +38,7 @@ translations = {
     "quarks-7": "Organiser une queue de traitements avec RabbitMQ pour traiter un gros volume de fichiers (~ 10 000)",
     "quarks-8": "Optimiser l'algorithme d'extraction selon les résultats obtenus",
     "quarks-9": "Enregistrer les résultats dans une base de données MongoDB",
-    "dev-intership": "Stage développeur",
+    "dev-internship": "Stage développeur",
     "march-june": "(Mars - Juin)",
     "ge": "General Electric (Belfort, 90)",
     "ge-1": "Réalisation d'un logiciel d'affichage et de facilitation d'accès aux données de montage d'une turbine à gaz en Python.",
