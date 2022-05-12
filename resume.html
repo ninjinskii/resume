@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>CV - Louis Bailly</title>
+    <title>{{ title }}</title>
     <meta name="description" content="CV - Louis Bailly" />
     <meta name="author" content="Louis Bailly" />
 
@@ -15,7 +15,7 @@
       <header class="row">
         <div class="col-8">
           <h1 class="my-0">Louis Bailly</h1>
-          <h3 class="mb-0">Développeur</h3>
+          <h3 class="mb-0">{{ position }}</h3>
         </div>
         <div class="col-4">
           <img src="./images/louis.jpg" class="avatar" />
@@ -81,15 +81,12 @@
           </div>
         </div>
         <div class="col-9">
-          <p class="mb-0 mt-4">
-            Développeur full stack passionné qui aime rester à jour avec les
-            technologies.
-          </p>
+          <p class="mb-0 mt-4">{{ intro }}</p>
         </div>
         <div class="col-3 mt-4">
           <span class="button no-print">
             <a href="https://ninjinskii.github.io" target="_blank">
-              Voir mon portfolio
+              {{ portfolio }}
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -111,8 +108,8 @@
       <main class="row mt-4">
         <div class="col-5 left-side">
           <section>
-            <h2>Compétences</h2>
-            <h4>Back end</h4>
+            <h2>{{ skills }}</h2>
+            <h4>{{ backend }}</h4>
             <div class="row text-caption">
               <div class="col-4 mb-3">
                 <div>
@@ -172,7 +169,7 @@
                 </div>
               </div>
             </div>
-            <h4>Front end</h4>
+            <h4>{{ frontend }}</h4>
             <div class="row text-caption">
               <div class="col-4 mb-3">
                 <div>
@@ -229,7 +226,7 @@
                 </div>
               </div>
             </div>
-            <h4>Mobile</h4>
+            <h4>{{ mobile }}</h4>
             <div class="row text-caption">
               <div class="col-4 mb-3">
                 <div>
@@ -250,7 +247,7 @@
                 </div>
               </div>
             </div>
-            <h4>Autre</h4>
+            <h4>{{ other }}</h4>
             <div class="row text-caption">
               <div class="col-4 mb-3">
                 <div>
@@ -289,7 +286,7 @@
                 </div>
               </div>
             </div>
-            <h4>Langages</h4>
+            <h4>{{ languages }}</h4>
             <div class="row text-caption">
               <div class="col-2">Kotlin</div>
               <div class="col-2">Java</div>
@@ -306,168 +303,105 @@
           </section>
           <hr class="inset-divider my-5" />
           <section>
-            <h2>Formation</h2>
+            <h2>{{ education }}</h2>
             <article>
               <p class="mb-0">2019 - 2020</p>
-              <div class="mb-0 text-caption">
-                Université de Franche-Comté (Besançon, 25)
-              </div>
-              <p>
-                Licence Professionnelle Conception et développement
-                d'applications multi-tiers, 3ème année
-              </p>
+              <div class="mb-0 text-caption">{{ university }}</div>
+              <p>{{ lp }}</p>
             </article>
             <article>
               <p class="mb-0">2016 - 2018</p>
-              <div class="mb-0 text-caption">
-                IUT de Saint-Dié-des-Vosges (88)
-              </div>
-              <p>DUT informatique</p>
+              <div class="mb-0 text-caption">{{ iut }}</div>
+              <p>{{ dut }}</p>
             </article>
             <article>
               <p class="mb-0">2015 - 2016</p>
-              <div class="mb-0 text-caption">
-                Lycée Georges Colomb (Lure, 70)
-              </div>
-              <p>
-                Baccalauréat scientifique, <br />
-                spécialité physique-chimie
-              </p>
+              <div class="mb-0 text-caption">{{ lycee }}</div>
+              <p>{{ bachelors }}</p>
             </article>
           </section>
           <hr class="inset-divider my-5" />
           <section>
-            <h2>Langue</h2>
-            <article>Anglais niveau B2 (Score TOEIC: 780/990)</article>
+            <h2>{{ lang }}</h2>
+            <article>{{ english }}</article>
           </section>
         </div>
         <div class="col-7 l-divider right-side">
           <section>
-            <h2 style="letter-spacing: 4px">Expériences professionnelles</h2>
+            <h2 style="letter-spacing: 4px">{{ work-experience }}</h2>
             <article>
               <div class="row">
-                <h4 class="col mb-0 mt-2">Développeur front end</h4>
+                <h4 class="col mb-0 mt-2">{{ frontend-dev }}</h4>
                 <h4 class="col-auto text-date mb-0 mt-2">
-                  <span class="mr-2">(Janvier)</span> 2022
+                  <span class="mr-2">{{ january }}</span> 2022
                 </h4>
               </div>
               <div class="row">
-                <div class="col-12 text-caption">
-                  Klanik (Full Remote) | CNAM
-                </div>
+                <div class="col-12 text-caption">{{ klanik }}</div>
                 <div class="col-12">
-                  <p class="mb-0 mt-2">
-                    Développement d'une application en lien avec un
-                    environnement devops microservice dans un projet visant à
-                    aider les employeurs à renseigner leurs justificatifs
-                    administratifs.
-                  </p>
+                  <p class="mb-0 mt-2">{{ cnam }}</p>
                   <ul class="mt-2 ml-3">
-                    <li>
-                      Utiliser le système de design interne à l'institution
-                      (Design System) et adaptation de ce dernier au besoin
-                    </li>
-                    <li>
-                      Surcharger le thème Vuetify pour créer une interface
-                      personnalisée à la demande du métier
-                    </li>
+                    <li>{{ cnam-1 }}</li>
+                    <li>{{ cnam-2 }}</li>
                   </ul>
                 </div>
               </div>
             </article>
             <article>
               <div class="row">
-                <h4 class="col mb-0 mt-4">Développeur full stack</h4>
+                <h4 class="col mb-0 mt-4">{{ fullstack-dev }}</h4>
                 <h4 class="col-auto text-date mb-0 mt-4">2020 - 2021</h4>
               </div>
               <div class="row">
-                <div class="col-12 text-caption">
-                  Quarks solutions (Besançon, 25)
-                </div>
+                <div class="col-12 text-caption">{{ quarks }}</div>
                 <div class="col-12">
                   <ul class="mt-2 ml-3">
-                    <li>
-                      Diriger la réalisation d'une nouvelle application Android
-                      de gestion du risque chimique
-                    </li>
-                    <li>
-                      Produire une librairie interne documentée de composants
-                      réutilisables pour Nuxt.js
-                    </li>
-                    <li>
-                      Réaliser un système de connexion d'utilisateur utilisant
-                      des JSON web tokens
-                    </li>
-                    <li>
-                      Déployer et maintenir une application facilitant la
-                      préparation des tournées de camions pour une entreprise de
-                      négoce
-                    </li>
+                    <li>{{ quarks-1 }}</li>
+                    <li>{{ quarks-2 }}</li>
+                    <li>{{ quarks-3 }}</li>
+                    <li>{{ quarks-4 }}</li>
                   </ul>
                 </div>
               </div>
             </article>
             <article class="mt-4">
               <div class="row">
-                <h4 class="col mb-0 mt-2">Stage développeur full stack</h4>
+                <h4 class="col mb-0 mt-2">{{ fullstack-dev-intern }}</h4>
                 <h4 class="col-auto text-date mb-0 mt-2">
-                  <span class="mr-2">(Mars - Mai)</span> 2020
+                  <span class="mr-2">{{ march }}</span> 2020
                 </h4>
               </div>
               <div class="row">
-                <div class="col-12 text-caption">
-                  Quarks solutions (Besançon, 25)
-                </div>
+                <div class="col-12 text-caption">{{ quarks }}</div>
                 <div class="col-12">
-                  <p class="mb-0 mt-2">
-                    Mise en oeuvre d'un extracteur de fiches de données de
-                    sécurité avec NodeJs.
-                  </p>
+                  <p class="mb-0 mt-2">{{ quarks-5 }}</p>
                   <ul class="mt-2 ml-3">
-                    <li>
-                      Concevoir une interface graphique en Vue.js pour présenter
-                      les résultats de l'extraction et choisir les fichiers à
-                      traiter.
-                    </li>
-                    <li>
-                      Organiser une queue de traitements avec RabbitMQ pour
-                      traiter un gros volume de fichiers (~ 10 000)
-                    </li>
-                    <li>
-                      Optimiser l'algorithme d'extraction selon les résultats
-                      obtenus
-                    </li>
-                    <li>
-                      Enregistrer les résultats dans une base de données MongoDB
-                    </li>
+                    <li>{{ quarks-6 }}</li>
+                    <li>{{ quarks-7 }}</li>
+                    <li>{{ quarks-8 }}</li>
+                    <li>{{ quarks-9 }}</li>
                   </ul>
                 </div>
               </div>
             </article>
             <article class="mt-4">
               <div class="row">
-                <h4 class="col mb-0 mt-2">Stage développeur</h4>
+                <h4 class="col mb-0 mt-2">{{ dev-internship }}</h4>
                 <h4 class="col-auto text-date mb-0 mt-2">
-                  <span class="mr-2">(Mars - Juin)</span> 2018
+                  <span class="mr-2">{{ march-june }}</span> 2018
                 </h4>
               </div>
               <div class="row">
-                <div class="col-12 text-caption">
-                  General Electric (Belfort, 90)
-                </div>
+                <div class="col-12 text-caption">{{ ge }}</div>
                 <div class="col-12">
-                  <p class="mt-2 mb-0">
-                    Réalisation d'un logiciel d'affichage et de facilitation
-                    d'accès aux données de montage d'une turbine à gaz en
-                    Python.
-                  </p>
+                  <p class="mt-2 mb-0">{{ ge-1 }}</p>
                 </div>
               </div>
             </article>
           </section>
           <hr class="my-5" />
           <section>
-            <h2>Projet personnel</h2>
+            <h2>{{ presonnal-projects }}</h2>
             <article class="mt-4">
               <div class="row">
                 <h4 class="col mb-0">
@@ -491,18 +425,17 @@
               <div class="row">
                 <div class="col-12">
                   <p class="mb-0 mt-2">
-                    Création d'un gestionnaire de cave à vin pour Android.
+                    {{ cavity-1 }}
                   </p>
                   <ul class="mt-2 ml-3">
                     <li>
-                      Gérer les stocks de bouteilles de vin avec une base de
-                      données
+                      {{ cavity-2}}
                     </li>
                     <li>
-                      Proposer des vins dont la date d'apogée est atteinte
+                      {{ cavity-3 }}
                     </li>
                     <li>
-                      Visionner les statistiques d'achat et de consommation
+                      {{ cavity-4 }}
                     </li>
                   </ul>
                 </div>
